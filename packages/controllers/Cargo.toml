@@ -11,10 +11,10 @@ homepage = "https://cosmwasm.com"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-cosmwasm-schema = "1.0.0"
-cosmwasm-std = "1.0.0"
-cw-utils = "1.0.1"
-cw-storage-plus = "1.0.1"
+cosmwasm-schema = { git = "https://github.com/finschia/cosmwasm", tag = "v1.1.9-0.7.0-dynamiclink1" }
+cosmwasm-std = { git = "https://github.com/finschia/cosmwasm", tag = "v1.1.9-0.7.0-dynamiclink1" }
+cw-utils = { git = "https://github.com/dudong2/cw-utils", branch = "dynamic_link" }
+cw-storage-plus = { git = "https://github.com/dudong2/cw-storage-plus", branch = "dynamic_link" }
 schemars = "0.8.1"
 serde = { version = "1.0.103", default-features = false, features = ["derive"] }
 thiserror = { version = "1.0.21" }

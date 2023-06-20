@@ -9,10 +9,10 @@ repository = "https://github.com/CosmWasm/cw-plus"
 homepage = "https://cosmwasm.com"
 
 [dependencies]
-cw-utils = "1.0.1"
+cw-utils = { git = "https://github.com/dudong2/cw-utils", branch = "dynamic_link" }
 cw20 = { path = "../../packages/cw20", version = "1.0.1" }
-cosmwasm-schema = "1.1.0"
-cosmwasm-std = "1.1.0"
+cosmwasm-schema = { git = "https://github.com/finschia/cosmwasm", tag = "v1.1.9-0.7.0-dynamiclink1" }
+cosmwasm-std = { git = "https://github.com/finschia/cosmwasm", tag = "v1.1.9-0.7.0-dynamiclink1" }
 schemars = "0.8.1"
 serde = { version = "1.0.103", default-features = false, features = ["derive"] }
 thiserror = { version = "1.0.23" }
